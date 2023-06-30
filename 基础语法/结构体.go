@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-type user struct {
+type user2 struct {
 	age  byte
 	name string
 }
 
 type manager struct {
-	user  //匿名嵌入其他类型
+	user2 //匿名嵌入其他类型
 	title string
 }
 

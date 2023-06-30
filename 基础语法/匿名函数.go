@@ -2,22 +2,22 @@ package main
 
 import "fmt"
 
-type user struct {
+type user1 struct {
 	name string
 	age  byte
 }
 
-func (u user) ToString() string {
+func (u user1) ToString() string {
 	return fmt.Sprintf("%+v", u)
 }
 
-type manager struct {
-	user
+type manager1 struct {
+	user1
 	title string
 }
 
 func main() {
-	var m manager
+	var m manager1
 	m.name = "Tom"
 	m.age = 40
 	println(m.ToString())
