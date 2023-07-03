@@ -32,7 +32,7 @@ func HttpGet(url string) (result string, err error) {
 	return
 }
 
-//开始爬取每一个笑话，每一个段子 title, content, err := SpiderOneJoy(url)
+// 开始爬取每一个笑话，每一个段子 title, content, err := SpiderOneJoy(url)
 func SpiderOneJoy(url string) (title, content string, err error) {
 	//开始爬取页面内容
 	result, err1 := HttpGet(url)
@@ -83,7 +83,7 @@ func SpiderOneJoy(url string) (title, content string, err error) {
 	return
 }
 
-//把内容写入到文件
+// 把内容写入到文件
 func StoreJoyToFile(i int, fileTitle, fileContent []string) {
 	//新建文件
 	f, err := os.Create(strconv.Itoa(i) + ".txt")

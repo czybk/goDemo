@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-//服务端编写的业务逻辑处理程序
+// 服务端编写的业务逻辑处理程序
 func myHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "hello world")
 }

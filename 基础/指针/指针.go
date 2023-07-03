@@ -25,7 +25,8 @@ func main() {
 	iPtr1 := &i
 	var iPtr2 *int64 = (*int64)(unsafe.Pointer(iPtr1))
 	*iPtr2 = 20
-	fmt.Println(i)
+	i = 21
+	fmt.Println(i, *iPtr2, &iPtr2)
 
 	//指针偏移量运算
 	var person1 Person
